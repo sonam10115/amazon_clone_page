@@ -74,43 +74,7 @@ This repository presents a meticulous frontend replication of Amazon's industry-
 
 ---
 
-## 🏗️ Layout and DOM Architecture
 
-```mermaid
-graph TD
-    Document([HTML5 Document Body]) --> Header[Header Container]
-    Document --> Hero[Hero Banner Slider]
-    Document --> ShopGrid[Product Grid Container]
-    Document --> Footer[Footer Container]
-
-    subgraph Header Components
-        Header --> Navbar[Primary Navigation Bar]
-        Navbar --> Logo[Brand Logo]
-        Navbar --> Geo[Location Selector]
-        Navbar --> Search[Search Engine Component]
-        Navbar --> UserActions[Account & Orders Shortcuts]
-        Navbar --> Cart[Cart Widget]
-        Header --> SubPanel[Category Operations Panel]
-    end
-
-    subgraph Product Grid (Flexbox 8-Box Layout)
-        ShopGrid --> Card1[Toys Card]
-        ShopGrid --> Card2[Gaming Card]
-        ShopGrid --> Card3[Computer Card]
-        ShopGrid --> Card4[Dining Card]
-        ShopGrid --> Card5[Tablets Card]
-        ShopGrid --> Card6[Flowers Card]
-        ShopGrid --> Card7[Trackers Card]
-        ShopGrid --> Card8[Fashion Card]
-    end
-
-    subgraph Footer Structure
-        Footer --> BackToTop[Back to Top Panel]
-        Footer --> LinkMatrix[4-Column Links Matrix]
-    end
-```
-
----
 
 ## 💻 Tech Stack & Tooling
 
